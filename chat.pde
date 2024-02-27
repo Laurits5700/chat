@@ -14,14 +14,14 @@ void setup(){
     textSize(32);
     text(msg, 100, 100);
     
-for(int i = log.size(); i > 0; i--){
-  text(log.get(i-1),100,150+50*(i-1));
+for(int i = 0; i < log.size(); i++){
+  text(log.get(i),100,150+50*i);
     }
   }   
   
  void keyPressed(){
    if (key == ENTER){
-     log.add(msg);
+     log.add(0, msg);
      msg = "";
    }else{
    msg += key;
