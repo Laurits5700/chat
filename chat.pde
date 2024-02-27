@@ -13,9 +13,8 @@ void setup(){
     textSize(32);
     text(msg, 100, 100);
     
-    int index = 0;
-    for(String s : log){
-     text(s,100,150+50*index); 
+for(int i = 0; i < log.size(); i++){
+  text(log.get(i),100,150+50*i);
     }
   }   
   
