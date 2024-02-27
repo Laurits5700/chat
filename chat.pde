@@ -1,1 +1,7 @@
-println("hello world");
+void setup(){
+}
+  void draw(){
+  }   
+  
+ void keyPressed(){
+ }
